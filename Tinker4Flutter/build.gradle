@@ -1,0 +1,29 @@
+apply plugin: 'groovy'
+apply plugin: 'maven'
+
+dependencies {
+    //gradle sdk
+    implementation gradleApi()
+    //groovy sdk
+    implementation localGroovy()
+    implementation 'com.android.tools.build:gradle:3.4.2'
+}
+repositories {
+    jcenter()
+}
+
+uploadArchives {
+    repositories.mavenDeployer {
+        //TODO 本地仓库路径，可以修改到自己本地的文件路径
+        repository(url: uri('/Android/Tinker4Flutter'))
+
+        //groupId ，自行定义，组织名或公司名
+        pom.groupId = 'me.chunsheng.t4f'
+
+        //artifactId，自行定义，项目名或模块名
+        pom.artifactId = 'tinker-for-flutter'
+
+        //插件版本号
+        pom.version = '0.0.1'
+    }
+}
