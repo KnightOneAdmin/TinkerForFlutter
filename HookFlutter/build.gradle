@@ -1,4 +1,5 @@
 apply plugin: 'com.android.library'
+//apply plugin: 'com.novoda.bintray-release'
 
 android {
     compileSdkVersion 30
@@ -33,3 +34,12 @@ dependencies {
     // 指定tinker依赖版本（注：应用升级1.3.5版本起，不再内置tinker）
     compileOnly 'com.tencent.tinker:tinker-android-lib:1.9.14.6'
 }
+
+//publish {
+//    userOrg = 'hpu-spring87'
+//    groupId = 'me.chunsheng'
+//    artifactId = 'hookflutter'
+//    publishVersion = '0.0.1'
+//    desc = 'Release 0.0.1初版.'
+//    website = 'https://github.com/wei-spring/TinkerForFlutter'
+//}

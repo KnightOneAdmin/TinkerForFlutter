@@ -5,7 +5,6 @@ import org.objectweb.asm.MethodVisitor;
 import org.objectweb.asm.Opcodes;
 
 /**
- * @description: 生成MethodClassAdapter类@
  * @author: weichunsheng
  * @version: 1.0
  */

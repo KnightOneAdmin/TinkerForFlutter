@@ -7,7 +7,6 @@ import org.objectweb.asm.Opcodes;
 import static org.objectweb.asm.Opcodes.ASM4;
 
 /**
- * @description: FBMethodVisitor@
  * @author: weichunsheng
  * @version: 1.0
  */

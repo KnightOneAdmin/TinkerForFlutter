@@ -1,5 +1,6 @@
 apply plugin: 'groovy'
 apply plugin: 'maven'
+apply plugin: 'com.novoda.bintray-release'
 
 dependencies {
     //gradle sdk
@@ -14,7 +15,7 @@ repositories {
 
 uploadArchives {
     repositories.mavenDeployer {
-        //TODO 本地仓库路径，可以修改到自己本地的文件路径
+        //TODO 本地仓库路径，可以修改到自己本地的文件路径,方便调试
         repository(url: uri('/Android/Tinker4Flutter'))
 
         //groupId ，自行定义，组织名或公司名
@@ -26,4 +27,13 @@ uploadArchives {
         //插件版本号
         pom.version = '0.0.1'
     }
+}
+
+publish {
+    userOrg = 'hpu-spring87'
+    groupId = 'me.chunsheng'
+    artifactId = 'tinker4flutter'
+    publishVersion = '0.0.1'
+    desc = 'Release 0.0.1初版.'
+    website = 'https://github.com/wei-spring/TinkerForFlutter'
 }
