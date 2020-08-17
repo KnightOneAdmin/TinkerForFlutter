@@ -2,10 +2,10 @@ include ':HookFlutter'
 setBinding(new Binding([gradle: this]))
 evaluate(new File(
   settingsDir,
-  'flutter_module/.android/include_flutter.groovy'
+  'flutter_for_tinker/.android/include_flutter.groovy'
 ))
 include ':Tinker4Flutter'
 include ':app'
 rootProject.name = "TinkerForFlutter"
 
-include ':flutter_module'
+include ':flutter_for_tinker'

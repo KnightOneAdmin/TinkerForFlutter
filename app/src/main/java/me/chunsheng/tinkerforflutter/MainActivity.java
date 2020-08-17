@@ -3,17 +3,28 @@ package me.chunsheng.tinkerforflutter;
 import android.support.v7.app.AppCompatActivity;
 
 import android.os.Bundle;
-import io.flutter.embedding.android.FlutterFragment;
+import android.view.View;
+import android.widget.TextView;
+
+import io.flutter.embedding.android.FlutterActivity;
 
 public class MainActivity extends AppCompatActivity {
 
-      @Override
-      protected void onCreate(Bundle savedInstanceState) {
-            super.onCreate(savedInstanceState);
-            setContentView(R.layout.activity_main);
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        TextView textview = findViewById(R.id.title);
+        textview.setText("Flutter Tinker");
+        textview.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(
+                        FlutterActivity
+                                .createDefaultIntent(MainActivity.this)
+                );
+            }
+        });
 
-            //FlutterFragment fragment=new FlutterFragment();
-            FlutterFragment fragment=FlutterFragment.withNewEngine().initialRoute("/").build();
-            getSupportFragmentManager().beginTransaction().add(R.id.flutter_container, fragment).commit();
-      }
+    }
 }

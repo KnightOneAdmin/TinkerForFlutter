@@ -1,5 +1,5 @@
-name: fluttermodule
-description: A new Flutter module for hot fix.
+name: flutter_for_tinker
+description: A new Flutter module for Tinker Test.
 
 # The following defines the version and build number for your application.
 # A version number is three numbers separated by dots, like 1.2.43
@@ -81,6 +81,5 @@ flutter:
   # They also do not have any bearing on your native host application's
   # identifiers, which may be completely independent or the same as these.
   module:
-    androidX: true
-    androidPackage: me.chunsheng.fluttermodule
-    iosBundleIdentifier: me.chunsheng.fluttermodule
+    androidPackage: me.chunsheng.flutter_for_tinker
+    iosBundleIdentifier: me.chunsheng.flutterForTinker

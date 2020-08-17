@@ -22,15 +22,16 @@ android {
         }
     }
 
+    lintOptions {
+        abortOnError false
+    }
+
+
 }
 
 dependencies {
     implementation fileTree(dir: "libs", include: ["*.jar"])
-    implementation 'androidx.appcompat:appcompat:1.1.0'
-    testImplementation 'junit:junit:4.12'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
-//    compileOnly project(':flutter')
+    compileOnly project(':flutter')
     // 指定tinker依赖版本（注：应用升级1.3.5版本起，不再内置tinker）
     compileOnly 'com.tencent.tinker:tinker-android-lib:1.9.14.6'
 }
@@ -39,7 +40,7 @@ dependencies {
 //    userOrg = 'hpu-spring87'
 //    groupId = 'me.chunsheng'
 //    artifactId = 'hookflutter'
-//    publishVersion = '0.0.1'
-//    desc = 'Release 0.0.1初版.'
+//    publishVersion = '0.0.2'
+//    desc = 'Release 0.0.2,remove androidx.'
 //    website = 'https://github.com/wei-spring/TinkerForFlutter'
 //}

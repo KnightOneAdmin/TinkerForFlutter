@@ -1,6 +1,6 @@
-# fluttermodule
+# flutter_for_tinker
 
-A new Flutter module for hot fix.
+A new Flutter module for Tinker Test.
 
 ## Getting Started
 

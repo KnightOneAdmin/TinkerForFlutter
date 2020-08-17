@@ -14,8 +14,8 @@
             <option value="$PROJECT_DIR$/HookFlutter" />
             <option value="$PROJECT_DIR$/Tinker4Flutter" />
             <option value="$PROJECT_DIR$/app" />
-            <option value="$PROJECT_DIR$/flutter_module" />
-            <option value="$PROJECT_DIR$/flutter_module/.android/Flutter" />
+            <option value="$PROJECT_DIR$/flutter_for_tinker" />
+            <option value="$PROJECT_DIR$/flutter_for_tinker/.android/Flutter" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
