@@ -119,19 +119,23 @@ public class HookFlutter {
      * @return
      */
     public static String getCpuABI() {
-
         if (Build.VERSION.SDK_INT >= 21) {
             for (String cpu : Build.SUPPORTED_ABIS) {
                 if (!TextUtils.isEmpty(cpu)) {
-                    TinkerLog.i("HookFlutter", "cpu abi is:" + cpu);
-                    return cpu;
+                    if (cpu.contains("86")) {
+                        return "x86";
+                    } else {
+                        return "armeabi-v7a";
+                    }
                 }
             }
+            return "armeabi-v7a";
         } else {
-            TinkerLog.i("HookFlutter", "cpu abi is:" + Build.CPU_ABI);
-            return Build.CPU_ABI;
+            if (Build.CPU_ABI.contains("86")) {
+                return "x86";
+            } else {
+                return "armeabi-v7a";
+            }
         }
-
-        return "";
     }
 }

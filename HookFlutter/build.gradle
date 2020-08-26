@@ -1,5 +1,5 @@
 apply plugin: 'com.android.library'
-//apply plugin: 'com.novoda.bintray-release'
+apply plugin: 'com.novoda.bintray-release'
 
 android {
     compileSdkVersion 30
@@ -36,11 +36,11 @@ dependencies {
     compileOnly 'com.tencent.tinker:tinker-android-lib:1.9.14.6'
 }
 
-//publish {
-//    userOrg = 'hpu-spring87'
-//    groupId = 'me.chunsheng'
-//    artifactId = 'hookflutter'
-//    publishVersion = '0.0.2'
-//    desc = 'Release 0.0.2,remove androidx.'
-//    website = 'https://github.com/wei-spring/TinkerForFlutter'
-//}
+publish {
+    userOrg = 'hpu-spring87'
+    groupId = 'me.chunsheng'
+    artifactId = 'hookflutter'
+    publishVersion = '0.0.3'
+    desc = 'Release 0.0.3,remove arm64-v8a.'
+    website = 'https://github.com/wei-spring/TinkerForFlutter'
+}

@@ -1,6 +1,6 @@
 apply plugin: 'groovy'
 apply plugin: 'maven'
-apply plugin: 'com.novoda.bintray-release'
+//apply plugin: 'com.novoda.bintray-release'
 
 dependencies {
     //gradle sdk
@@ -29,11 +29,11 @@ repositories {
 //    }
 //}
 
-publish {
-    userOrg = 'hpu-spring87'
-    groupId = 'me.chunsheng'
-    artifactId = 'tinker4flutter'
-    publishVersion = '0.0.2'
-    desc = 'Release 0.0.2,add jar support.'
-    website = 'https://github.com/wei-spring/TinkerForFlutter'
-}
+//publish {
+//    userOrg = 'hpu-spring87'
+//    groupId = 'me.chunsheng'
+//    artifactId = 'tinker4flutter'
+//    publishVersion = '0.0.2'
+//    desc = 'Release 0.0.2,add jar support.'
+//    website = 'https://github.com/wei-spring/TinkerForFlutter'
+//}
